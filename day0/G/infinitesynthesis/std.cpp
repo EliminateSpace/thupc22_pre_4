@@ -44,7 +44,9 @@ int main(){
 				qval = q[i] + q[dest];
 				// success: j -> j; draw / fail: j -> opponent
 				tmp = psuc[pval][qval] * f[dest][j][1] + pdraw[pval][qval] * f[dest][j ^ 1][0] + pfail[pval][qval] * f[dest][j ^ 1][2];
+				//fprintf(stderr, "%d->%d(%d):%lf %lf\n", dest, i, j, tmp, f[dest][j ^ 1][0]);
 				copt(j, f[i][j][0], tmp);
+				copt(j, f[i][j][0], f[dest][j ^ 1][0]);
 			}
 			// f[i][j][1]: additional from own challenge, j -> opponent
 			f[i][j][1] = f[i + 1][j ^ 1][0];
@@ -55,5 +57,6 @@ int main(){
 		}
 	}
 	printf("%.18lf\n", f[0][0][0]);
+	//for (i = 0; i < n; ++i) for (j = 0; j < 2; ++j) for (k = 0; k < 3; ++k) fprintf(stderr, "%d %d %d: %lf\n", i, j, k, f[i][j][k]);
 	return 0;
 }
