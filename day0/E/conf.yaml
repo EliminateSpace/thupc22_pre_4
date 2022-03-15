@@ -1,0 +1,50 @@
+args:
+  n: 1000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+  - cases: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22]
+    score: 100
+folder: problem
+memory limit: 512 MiB
+name: defile
+partial score: false
+pre: []
+samples:
+  - cases: [1,2]
+time limit: 10.0
+title:
+  zh-cn: E.搬砖
+type: program
+users:
+ esc:
+    defile20: {expected: == 100, path: esc/defile20.cpp}
+    defile30: {expected: == 100, path: esc/defile30.cpp}
+    defile40: {expected: == 100, path: esc/defile40.cpp}
+    defile45: {expected: == 100, path: esc/defile45.cpp}
+    defile50: {expected: == 100, path: esc/defile50.cpp}
+    defile60: {expected: == 100, path: esc/defile60.cpp}
+    bf: {expected: == 0, path: esc/bf.cpp}
+ marco_ch:
+    validator: {expected: == 0, path: marco_ch/validator.cpp}
+    bf: {expected: == 0, path: marco_ch/bf.cpp}
+    bf_wa: {expected: == 0, path: marco_ch/bf_wa.cpp}
+    sol_50_bf: {expected: == 0, path: marco_ch/sol_50_bf.cpp}
+    sol_segtree_bf: {expected: == 0, path: marco_ch/sol_segtree_bf.cpp}
+    sol_segtree_30: {expected: == 100, path: marco_ch/sol_segtree_30.cpp}
+    sol_segtree_40: {expected: == 100, path: marco_ch/sol_segtree_40.cpp}
+    sol_segtree_50: {expected: == 100, path: marco_ch/sol_segtree_50.cpp}
+    sol_1: {expected: == 0, path: marco_ch/sol_1.cpp}
+    sol_5: {expected: == 100, path: marco_ch/sol_5.cpp}
+    sol_10: {expected: == 100, path: marco_ch/sol_10.cpp}
+    sol_20: {expected: == 100, path: marco_ch/sol_20.cpp}
+    sol_50: {expected: == 100, path: marco_ch/sol_50.cpp}
+    sol_60: {expected: == 100, path: marco_ch/sol_60.cpp}
+    sol_80: {expected: == 100, path: marco_ch/sol_80.cpp}
+    sol_100: {expected: == 100, path: marco_ch/sol_100.cpp}
+version: 2
+
